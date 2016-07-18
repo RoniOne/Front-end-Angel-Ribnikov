@@ -1,0 +1,110 @@
+body{
+background-color:
+}
+#menu{
+list-style-type: none;
+float: right;
+margin:0% 15% 5% 5%;
+}
+li{
+display:inline;
+}
+li a{
+color:rgba(179,179,179,255);
+}
+
+a:link {
+	
+text-decoration: none; 
+}
+a:hover{
+text-decoration:underline;
+color:green;
+}
+#h2{display:inline;
+float:left;
+padding:0% 0% 0% 50%;
+
+}
+h4{font-weight: normal;
+}
+
+hr{
+height:1px;
+width:6%;
+border:none;
+border-top: 1px solid #000;
+text-align:left;margin-left:0;
+}
+
+#logo{margin:0% 0% 0% 15%;
+
+}
+#container{
+	height:100%;
+margin:0% 5% 0% 5%;
+
+}
+#img1{
+height:560px;
+width:560px;
+float:left;
+margin:0% 5% 0% 0%;
+}
+#text1{
+	display:block;
+float:right;
+margin:0% 0% 5% 0%;
+}
+#img2{
+height:560px;
+width:560px;
+float:right;
+margin:0% 0% 0% 5%;
+}
+#text2{
+	display:block;
+float:left;
+margin:0% 0% 5% 0%;
+}
+#img3{
+height:560px;
+width:560px;
+float:left;
+margin:0% 5% 0% 0%;
+}
+#text3{
+	display:block;
+float:right;
+margin:0% 0% 5% 0%;
+}
+#images{
+	padding:0% 0% 5% 0%;
+float:left;
+height:954px;
+}
+#slider2{
+	width:1000px;
+	height:709px;
+margin:0% 0% 0% 0%;
+}
+.mySlides {display:none}
+
+ 
+	/* for 760px or less */  
+	@media only screen and (max-width:760px) {         
+
+
+   }
+	/* for 1584px or less */  
+	@media only screen and (max-width:1584px) {   
+  
+ 
+ }  
+   
+
+	/* for 960px or less */  
+	@media only screen and (max-width:960px) {  
+      
+       
+    }		

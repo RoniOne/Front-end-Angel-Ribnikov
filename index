@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title></title>
+</head>
+<body>
+<header>
+<h1 id="logo">Clemo.</h1>
+<!--Creating menu-->
+<nav>
+<ul id="menu">
+<li><a href="#">about us</a></li>
+<li><a href="#">services</a></li>
+<li><a href="#">works</a></li>
+<li><a href="#">blog</a></li>
+<li><a href="#">contact</a></li>
+</ul>
+</nav>
+
+	</header>
+	
+
+<div id="h2"><h2>What we do ?</h2></div>
+	
+	<div id="container">
+<!--  This container conteins all other  tag in page -->
+<div id="text1">
+<img id="img1">
+<h4>Creative</h4>
+<hr>
+<h3>Kichen</h3>
+<p id="p1">Sed ut perspiciatis unde omnis iste natus erro sit
+voluptatem accusantiumdoloremque laudantium,totam rem aperiam,eaque ipsa quae ab illo inventore
+veritatis et quasi architecto beatae vitae dicta sunt explicalo.
+Nemo enim ipsam voluptatem quia volupata si aspernatur aut adit aut fugit,
+sedquia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+</div>
+
+<div id="text2">
+<img id="img2">
+<h4>art</h4>
+<hr>
+<h3>installation</h3>
+<p id="p2">Sed ut perspiciatis unde omnis iste natus error sit
+ voluptatem accusantium doloremque laudantium,totam rem aperiam eaque ipsa quae ab illo inventore veritatis et
+  quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptaten quia voluptas sit aspernatur aut odit aut fugit,sed 
+quia consequuntur magni dolores eos qui ratione voluptaten sequi nesciunt </p>
+</div>
+
+<div id="text3">
+<img id="img3">
+
+<h4>Print</h4>
+<hr>
+<h3>design</h3>
+<p id="p3">Sed ut perspiciats unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam,eaque ipsa quae ab illo inventore veritatis et quasi architectto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,sed quia consequuntur megni dolores eos qui 
+ratione voluptatem sequi nesciunt.</p>
+</div>
+
+<div id="images">
+<!--In this div i put first group of picture-->
+
+    <img  src="364.jpg" alt="" border='0' height='364px' width='364px'/>
+ 
+ 	 <img  src="590.jpg" alt="" border='0' height='590px' width='364px'/>
+
+    <img  src="364.jpg" alt="" border='0' height='364px' width='364px'/>
+  
+    <img   src="590.jpg" alt="" border='0' height='590px' width='364px'/>
+
+    <img   src="364.jpg" alt="" border='0' height='364px' width='364px'/>
+  
+    <img   src="590.jpg" alt="" border='0' height='590px' width='364px'/>
+  
+</div>
+
+<!--from here start second  javascript slider-->
+<div id="slider2">
+<div class="w3-content">
+  <img class="mySlides" src="slider2-1.jpg" style="width:1000px;">
+  <img class="mySlides" src="slider2-2.jpg" style="width:1000px;" >
+  <img class="mySlides" src="slider2-3.jpg"  style="width:1000px;">
+</div>
+
+<div class="w3-center">
+  <button class="w3-btn" onclick="plusDivs(-1)">&#10094; Prev</button>
+  <button class="w3-btn" onclick="plusDivs(1)">Next &#10095;</button>
+
+  <button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+  <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+  <button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+</div>
+
+<span><h2 style="display:inline;float:left; margin:50% 0% 0% 50%;">cliants say's</h2></span>
+
+<span><h4 style="display:inline;float:left; padding:0% 50% 0% 0%;" >frank sims</h4>
+<hr style="display:inline;float:left; margin:0% 50% 0% 0%;">
+<h3 style="display:inline;float:left; padding:0% 50% 0% 0%;">photographer</h3>
+</span>
+<span>
+<p style="float:left;display:block;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+doleremque laudantium,totam rem aperiam,eaque ipsa quae ab illo invenore
+veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</span>
+
+<!--In this div i put second group of picture-->
+<span style="display:inline;float:left; padding:10% 0% 10% 0%">
+  <img src="266.jpg" alt="266" width="266" height="140">
+  <img src="266.jpg" alt="266" width="266" height="140">
+  <img src="266.jpg" alt="266" width="266" height="140">
+  <img src="266.jpg" alt="266" width="266" height="140">
+</span>
+
+
+ </div>
+
+
+ </body>
+
+</html>
+
